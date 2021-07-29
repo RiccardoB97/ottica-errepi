@@ -4,13 +4,19 @@
     box-sizing: border-box;
     margin: 0 !important;
     padding: 0 !important;
-    font-size: 40px;
+    font-size: 28px;
 }
 
 body{
     background-color: #232323;
     color: white;
 }
+
+#site_main{
+    height: 100vh;
+}
+
+
 
 
 
@@ -22,14 +28,19 @@ Header
 /*********
 Main
 *********/
+.title{
+    width: 100%;
+    padding-left: 3rem !important;
+    padding-right: 12rem !important;
+}
 
-body h1{
+h1{
     font-family: 'Cormorant', serif;
 }
 
 h1 span{
     font-style: italic;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 h1 .semi-bold{
@@ -52,7 +63,7 @@ h1 .light{
 }
 
 .contacts p{
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .contacts i{
@@ -62,7 +73,7 @@ h1 .light{
 /* Opening hours */
 
 .hours p{
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .hours .time{
@@ -77,3 +88,17 @@ h1 .light{
 /*********
 Footer
 *********/
+
+
+
+
+/********
+Mediaquerys
+*********/
+
+/* Small screen */
+@media screen and (max-width: 768px){
+    .title{
+        padding: 1rem!important;
+    }
+}
