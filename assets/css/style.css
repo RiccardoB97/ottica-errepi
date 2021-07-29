@@ -2,8 +2,8 @@
 
 *{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
     font-size: 40px;
 }
 
@@ -23,7 +23,7 @@ Header
 Main
 *********/
 
-h1{
+body h1{
     font-family: 'Cormorant', serif;
 }
 
@@ -39,6 +39,23 @@ h1 .semi-bold{
 h1 .light{
     font-weight: 300;
 
+}
+
+
+/* Contacts */
+.contacts{
+
+}
+.contacts ul{
+    list-style: none;
+}
+
+.contacts p{
+    font-size: 16px;
+}
+
+.contacts i{
+    font-size: 32px;
 }
 
 /*********
