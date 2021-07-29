@@ -59,6 +59,21 @@ h1 .light{
     font-size: 28px;
 }
 
+/* Opening hours */
+
+.hours p{
+    font-size: 14px;
+}
+
+.hours .time{
+    font-weight: 300;
+    color: #DFDFDF;
+}
+
+.weekday.barred{
+    text-decoration: line-through;
+}
+
 /*********
 Footer
 *********/
