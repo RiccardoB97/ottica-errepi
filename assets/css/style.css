@@ -44,7 +44,8 @@ h1 .light{
 
 /* Contacts */
 .contacts{
-
+    font-family: 'Montserrat', serif;
+    font-weight: 600;
 }
 .contacts ul{
     list-style: none;
@@ -55,7 +56,7 @@ h1 .light{
 }
 
 .contacts i{
-    font-size: 32px;
+    font-size: 28px;
 }
 
 /*********
