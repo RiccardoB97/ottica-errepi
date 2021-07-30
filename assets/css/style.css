@@ -16,6 +16,13 @@ body{
     height: 100vh;
 }
 
+.pos-rel{
+    position: relative;
+}
+
+.pos-abs{
+    position: absolute;
+}
 
 
 
@@ -85,6 +92,13 @@ h1 .light{
     text-decoration: line-through;
 }
 
+.invisible{
+    visibility: hidden;
+}
+
+.invisible.pos-abs{
+    top: -1rem;
+}
 /*********
 Footer
 *********/
@@ -100,5 +114,11 @@ Mediaquerys
 @media screen and (max-width: 768px){
     .title{
         padding: 1rem!important;
+    }
+    .hours{
+        margin-top: 2rem!important;
+    }
+    .invisible{
+        visibility: visible !important;
     }
 }
