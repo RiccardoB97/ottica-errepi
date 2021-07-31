@@ -11,15 +11,13 @@
     <!-- Link GoogleFonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
     <!-- Main css -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 
 
 </head>
@@ -28,150 +26,53 @@
     <div id="app">
         <!-- Header -->
         <header id="site_header">
+            <!-- Black bar and logo -->
+            <div class="black_bar"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center pb-md-3 pt-3">
+                        <img src="./assets/img/00-Header/Logo-ottica-errepi.png" class='logo_header'
+                            alt="logo ottica errepi">
+                    </div>
+                </div>
+            </div>
+            <!-- /Black bar and logo -->
+            <!-- Navbar -->
+            <nav>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-8 offset-2 align-self-center ">
+                                    <hr>
+                                    <ul class="d-flex justify-content-center">
+                                        <li><a href="#site_header">HOME</a></li>
+                                        <li><a href="#about">CHI SIAMO</a></li>
+                                        <li><a href="#contacts">CONTATTI</a></li>
+                                    </ul>
+                                    <hr>
+                                </div>
+                                <div class="col-2">
+                                    <div class="socials">
+                                        <a href="https://www.instagram.com/ottica_errepi/"><i
+                                                class="fab fa-instagram"></i></a>
+                                        <a href="https://www.facebook.com/otticaerrepi"><i
+                                                class="fab fa-facebook-square"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- /Navbar -->
 
         </header>
         <!-- /Header -->
 
         <!-- Main -->
         <main id="site_main">
-            <div class="container title">
-                <div class="row">
-                    <div class="col-12 col-md-8">
-                        <h1><span class='semi-bold'>Sito</span> in manutenzione, un <span class='light'>nuovo
-                                look</span>
-                            per
-                            OtticaErrepi.</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid contacts pt-6 px-3">
-                <div class="row justify-content-end">
-                    <div class="col-md-6">
-                        <div class="row">
-                            <!-- Contacts -->
-                            <div class="col-md-6">
-                                <ul>
-                                    <li>
-                                        <div class="row align-items-center my-2 px-sm-1">
-                                            <div class="col-2 d-flex align-items-center">
-                                                <i class="fas fa-map-marker-alt"></i>
-                                            </div>
-                                            <div class="col-10">
-                                                <p>
-                                                    Piazza Giuseppe Garibaldi 11, 21018 Sesto Calende (VA)
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="row align-items-center my-2 px-sm-1">
-                                            <div class="col-2 d-flex align-items-center">
-                                                <i class="fas fa-phone"></i>
-                                            </div>
-                                            <div class="col-10">
-                                                <p>
-                                                    +39 0331 921264
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="row align-items-center my-2 px-sm-1">
-                                            <div class="col-2 d-flex align-items-center">
-                                                <i class="fas fa-envelope"></i>
-                                            </div>
-                                            <div class="col-10">
-                                                <p>
-                                                    info@otticaerrepi.com
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
 
-                                </ul>
-                            </div>
-                            <!-- /Contacts -->
-
-                            <!-- Opening hours -->
-                            <div class="col-md-6 hours pt-3 pt-md-0 pos-rel">
-                                <div class="row flex-wrap">
-                                    <div class="col-4 pt-2 px-sm-1">
-                                        <p class="weekday">Martedi</p>
-                                    </div>
-                                    <div class="col-4 pt-2 px-sm-1">
-                                        <p class='time'>9:00 - 12:30</p>
-                                    </div>
-                                    <div class="col-4 pt-2 px-sm-1">
-                                        <p class='time'>15:30 - 19:30</p>
-                                    </div>
-                                </div>
-                                <div class="row flex-wrap">
-                                    <div class="col-4 pt-2 px-sm-1">
-                                        <p class="weekday">Mercoledi</p>
-                                    </div>
-                                    <div class="col-4 pt-2 px-sm-1">
-                                        <p class='time'>9:00 - 12:30</p>
-                                    </div>
-                                    <div class="col-4 pt-2 px-sm-1">
-                                        <p class='time'>15:30 - 19:30</p>
-                                    </div>
-                                </div>
-                                <div class="row flex-wrap">
-                                    <div class="col-4 pt-2 px-sm-1">
-                                        <p class="weekday">Giovedi</p>
-                                    </div>
-                                    <div class="col-4 pt-2 px-sm-1">
-                                        <p class='time'>9:00 - 12:30</p>
-                                    </div>
-                                    <div class="col-4 pt-2 px-sm-1">
-                                        <p class='time'>15:30 - 19:30</p>
-                                    </div>
-                                </div>
-                                <div class="row flex-wrap">
-                                    <div class="col-4 pt-2 px-sm-1">
-                                        <p class="weekday">Venerdi</p>
-                                    </div>
-                                    <div class="col-4 pt-2 px-sm-1">
-                                        <p class='time'>9:00 - 12:30</p>
-                                    </div>
-                                    <div class="col-4 pt-2 px-sm-1">
-                                        <p class='time'>15:30 - 19:30</p>
-                                    </div>
-                                </div>
-                                <div class="row flex-wrap">
-                                    <div class="col-4 pt-2 px-sm-1">
-                                        <p class="weekday">Sabato</p>
-                                    </div>
-                                    <div class="col-4 pt-2 px-sm-1">
-                                        <p class='time'>9:00 - 12:30</p>
-                                    </div>
-                                    <div class="col-4 pt-2 px-sm-1">
-                                        <p class='time'>15:30 - 19:30</p>
-                                    </div>
-                                </div>
-                                <div class="row flex-wrap">
-                                    <div class="col-4 pt-2 px-sm-1">
-                                        <p class="weekday barred">Domenica</p>
-                                    </div>
-                                </div>
-                                <div class="row flex-wrap">
-                                    <div class="col-4 pt-2 px-sm-1">
-                                        <p class="weekday barred">Lunedi</p>
-                                    </div>
-                                </div>
-                                <div class="row flex-wrap pos-abs invisible">
-                                    <div class="col-4 pt-2 px-sm-1">
-                                        <i class="fas fa-clock "></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Opening hours -->
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
         </main>
         <!-- Main -->
 
@@ -183,7 +84,6 @@
 
 
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <script src="assets/js/app.js"></script>
 </body>

@@ -1,0 +1,124 @@
+/* Common */
+
+*{
+    box-sizing: border-box;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 28px;
+}
+
+body{
+    background-color: #232323;
+    color: white;
+}
+
+#site_main{
+    height: 100vh;
+}
+
+.pos-rel{
+    position: relative;
+}
+
+.pos-abs{
+    position: absolute;
+}
+
+
+
+
+/*********
+Header
+*********/
+
+
+/*********
+Main
+*********/
+.title{
+    width: 100%;
+    padding-left: 3rem !important;
+    padding-right: 12rem !important;
+}
+
+h1{
+    font-family: 'Cormorant', serif;
+}
+
+h1 span{
+    font-style: italic;
+    font-size: 2rem;
+}
+
+h1 .semi-bold{
+    font-weight: 600;
+}
+
+h1 .light{
+    font-weight: 300;
+
+}
+
+
+/* Contacts */
+.contacts{
+    font-family: 'Montserrat', serif;
+    font-weight: 600;
+}
+.contacts ul{
+    list-style: none;
+}
+
+.contacts p{
+    font-size: 12px;
+}
+
+.contacts i{
+    font-size: 28px;
+}
+
+/* Opening hours */
+
+.hours p{
+    font-size: 12px;
+}
+
+.hours .time{
+    font-weight: 300;
+    color: #DFDFDF;
+}
+
+.weekday.barred{
+    text-decoration: line-through;
+}
+
+.invisible{
+    visibility: hidden;
+}
+
+.invisible.pos-abs{
+    top: -1rem;
+}
+/*********
+Footer
+*********/
+
+
+
+
+/********
+Mediaquerys
+*********/
+
+/* Small screen */
+@media screen and (max-width: 768px){
+    .title{
+        padding: 1rem!important;
+    }
+    .hours{
+        margin-top: 2rem!important;
+    }
+    .invisible{
+        visibility: visible !important;
+    }
+}
