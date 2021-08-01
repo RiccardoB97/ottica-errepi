@@ -252,6 +252,30 @@ MAIN
     height: 90%;
 }
 
+/* Why us */
+
+.why_us{
+    padding-bottom: 4rem;
+}
+
+.why_us h3{
+    font-family: 'Cormorant', serif;
+    font-weight: bold;
+}
+
+.why_us img{
+    height: 280px;
+}
+
+.why_us span{
+    font-family: 'Montserrat', serif;
+    font-weight: bold;
+    font-size: 0.7rem;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0 1.9rem;
+}
+
 /* Small screen */
 @media screen and (max-width: 768px){
     .logo_header{

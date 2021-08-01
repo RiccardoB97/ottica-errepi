@@ -199,7 +199,30 @@
                 </div>
             </section>
             <!-- /Lab -->
-
+            <!-- Why us -->
+            <section class="why_us">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-center mt-5 us">
+                            <h3>Perchè scegliere noi</h3>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mt-3">
+                        <div class="col-3 d-flex flex-column align-items-center" v-for='item in whyUs'
+                            v-if='window.width > 1000'>
+                            <img :src="item.image" alt="">
+                            <span>{{item.text.toUpperCase()}}</span>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mt-3">
+                        <div v-if="window.width <= 1000" class="col-12 d-flex flex-column align-items-center">
+                            <img src="./assets/img/04-perchè-scegliere-noi/imm-lab-01.png" alt="">
+                            <span>ciao</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Why us -->
         </main>
         <!-- Main -->
 
