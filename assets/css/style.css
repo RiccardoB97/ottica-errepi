@@ -11,6 +11,10 @@
     margin: 0 auto;
 }
 
+.body{
+    color: #232323;
+}
+
 /****
 HEADER
 *****/
@@ -121,14 +125,14 @@ MAIN
 .chi_siamo_wrap img{
     position: absolute;
     height: 180px;
-    left: -50%;
+    left: -75%;
     top: 50%;
     transform: translate(50%, -50%);
     z-index: -1;
 }
 
 .chi_siamo{
-    font-size: 50px;
+    font-size: 40px;
     font-family: 'Cormorant', serif;
     font-weight: bold;
     color: white;
@@ -136,7 +140,7 @@ MAIN
     border-bottom-left-radius: 1.8rem;
     border-top-left-radius: 1.8rem;
     border-bottom-right-radius: 1.8rem;
-    background-color: black;
+    background-color: #232323;
     box-shadow: 0 0 10px rgb(48, 48, 48);
     margin: 0;
 }
@@ -145,7 +149,7 @@ MAIN
     height:120px;
     overflow-y: scroll;
     font-family: 'Montserrat', serif;
-    font-size:20px;
+    font-size: 16px;
 }
 
 .lista ul{
@@ -154,7 +158,7 @@ MAIN
 }
 
 .lista ul li{
-    font-size: 18px;
+    font-size: 14px;
     font-family: 'Montserrat', serif;
     font-weight: 500;
     text-transform: uppercase;
@@ -164,6 +168,11 @@ MAIN
 
 .update{
     margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+.update p {
+    font-size: 16px;
 }
 
 .banner{
@@ -171,6 +180,76 @@ MAIN
     background-image: url('../img/02-sempre-aggiornati/imagine-futuristica-occhiali.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
+}
+
+.always_updated{
+    font-size: 40px;
+    font-family: 'Cormorant', serif;
+    font-weight: bold;
+    color: #232323;
+    padding: 0.4rem 0.7rem;
+    border-bottom-left-radius: 1.8rem;
+    border-top-left-radius: 1.8rem;
+    border-bottom-right-radius: 1.8rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgb(48, 48, 48);
+    margin: 0;
+    position: absolute;
+    bottom: 0%;
+    transform: translate(0, 50%);
+}
+
+.lista_update{
+    margin-top: 4rem;
+}
+
+.essilor{
+    font-family: 'Montserrat', serif;
+    font-size:20px;
+}
+
+.essilor .bold{
+    font-size:16px;
+    font-weight: bold;
+}
+
+/* Lab */
+
+.lab{
+    background-color: #232323;
+    color: white;
+    position: relative;
+}
+
+.lab .our_lab{
+    position: absolute;
+    top: 0;
+    transform: translate(0 , -50%);
+    font-size: 40px;
+    font-family: 'Cormorant', serif;
+    font-weight: bold;
+    color: white;
+    padding: 0.4rem 0.7rem;
+    border-bottom-left-radius: 1.8rem;
+    border-top-left-radius: 1.8rem;
+    border-bottom-right-radius: 1.8rem;
+    background-color: #232323;
+    box-shadow: 0 0 10px rgb(48, 48, 48);
+    margin: 0;
+}
+
+.lab .lista{
+    margin: 1.5rem 0;
+}
+
+.lab p{
+    font-size: 16px;
+}
+
+.lab img{
+    position: absolute;
+    top: -1rem;
+    height: 90%;
 }
 
 /* Small screen */
@@ -185,6 +264,7 @@ MAIN
         font-size: 12px;
     }
     .banner{
+        border-top-left-radius: 25%;
         height: 240px;
     }
 
@@ -210,6 +290,29 @@ MAIN
     }
     .banner{
         margin-top: -4rem !important;
+        background-size: cover !important;
+        background-position-x: center !important;
+    }
+
+    .margin_negative{
+        margin-top: -4rem !important;  
+    }
+    .jumbo h1{
+        font-size: 55px;
+    }
+    .jumbo i{
+        font-size: 55px;
+    }
+
+    .lab img{
+        position: relative !important;
+        margin-top: 3rem;
+        height: 75%;
+    }
+
+    .lab .lista{
+        margin: 0;
+        padding: 0;
     }
 
 }
@@ -224,10 +327,10 @@ MAIN
         padding: 1rem;
     }
     .jumbo h1{
-        font-size: 50px;
+        font-size: 40px;
     }
     .jumbo i{
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .chi_siamo_wrap img{
@@ -235,7 +338,7 @@ MAIN
         height: 140px;
     }
 
-    .chi_siamo{
+    .chi_siamo, .always_updated, .our_lab{
         font-size: 30px;
     }
 
@@ -251,5 +354,6 @@ MAIN
     nav ul li a{
         font-size: 8px;
     }
+
 
 }
