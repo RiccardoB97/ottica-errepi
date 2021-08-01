@@ -7,10 +7,6 @@
     font-size: 28px;
 }
 
-body{
-
-}
-
 .container{
     margin: 0 auto;
 }
@@ -37,6 +33,7 @@ HEADER
     top: 0;
     width: 100%;
     background-color: white;
+    z-index: 1;
 }
 
 .blocco{
@@ -87,7 +84,94 @@ nav .socials a{
 }
 
 
+/****
+MAIN
+*****/
 
+#site_main{
+    margin-top: 180px;
+}
+
+.jumbo h1{
+    font-size: 72px;
+    font-family: 'Cormorant', serif;
+}
+
+.jumbo i{
+    font-size: 72px;
+}
+
+.jumbo .asterisco{
+    position: absolute;
+    top: -0.5rem;
+    left: -0.5rem;
+    height: 30px;
+}
+
+/* About */
+
+#about{
+    margin-top: 3rem;
+}
+
+.chi_siamo_wrap{
+    position: relative;
+}
+
+.chi_siamo_wrap img{
+    position: absolute;
+    height: 180px;
+    left: -50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    z-index: -1;
+}
+
+.chi_siamo{
+    font-size: 50px;
+    font-family: 'Cormorant', serif;
+    font-weight: bold;
+    color: white;
+    padding: 0.4rem 0.7rem;
+    border-bottom-left-radius: 1.8rem;
+    border-top-left-radius: 1.8rem;
+    border-bottom-right-radius: 1.8rem;
+    background-color: black;
+    box-shadow: 0 0 10px rgb(48, 48, 48);
+    margin: 0;
+}
+
+.scroll{
+    height:120px;
+    overflow-y: scroll;
+    font-family: 'Montserrat', serif;
+    font-size:20px;
+}
+
+.lista ul{
+    list-style: none;
+    padding: 0;
+}
+
+.lista ul li{
+    font-size: 18px;
+    font-family: 'Montserrat', serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* Update */
+
+.update{
+    margin-top: 3rem;
+}
+
+.banner{
+    height: 340px;
+    background-image: url('../img/02-sempre-aggiornati/imagine-futuristica-occhiali.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
 
 /* Small screen */
 @media screen and (max-width: 768px){
@@ -100,20 +184,72 @@ nav .socials a{
     nav ul li a{
         font-size: 12px;
     }
+    .banner{
+        height: 240px;
+    }
 
 }
 
+/* between small and medium */
 @media screen and (min-width: 768px) and (max-width: 1000px){
     nav ul li{
         padding: 0 1rem;
     }
+
 }
 
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    .chi_siamo_wrap img{
+        left: -70%;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .lista ul li{
+        visibility: hidden !important;
+    }
+    .banner{
+        margin-top: -4rem !important;
+    }
+
+}
+
+/* bigger screen */
 @media screen and (max-width: 1000px){
     nav .socials{
         visibility: hidden !important;
         font-size: 12px;
     }
+    .jumbo{
+        padding: 1rem;
+    }
+    .jumbo h1{
+        font-size: 50px;
+    }
+    .jumbo i{
+        font-size: 50px;
+    }
 
+    .chi_siamo_wrap img{
+        left: -70%;
+        height: 140px;
+    }
+
+    .chi_siamo{
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width: 576px){
+    .chi_siamo_wrap img{
+        left: -70%;
+    }
+    nav ul li{
+        padding: 0 0.5rem;
+    }
+    nav ul li a{
+        font-size: 8px;
+    }
 
 }
