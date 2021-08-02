@@ -216,8 +216,19 @@
                     </div>
                     <div class="row justify-content-center mt-3">
                         <div v-if="window.width <= 1000" class="col-12 d-flex flex-column align-items-center">
-                            <img src="./assets/img/04-perchè-scegliere-noi/imm-lab-01.png" alt="">
-                            <span>ciao</span>
+                            <div class="slider d-flex align-items-center carousel slide">
+                                <div class="prev" @click="showPrev"><i class="fas fa-chevron-left"></i></div>
+                                <img :src="images[counter]" alt="" class='mx-2'>
+                                <div class="next" @click="showNext"><i class="fas fa-chevron-right"></i></div>
+                            </div>
+                            <span v-for='(item, index) in whyUs' v-if='index == counter'
+                                class="why_us_span mt-2">{{item.text.toUpperCase()}}</span>
+                            <div class="circles d-flex mt-2">
+                                <div v-for='(circle, index) in images'
+                                    :class="(index == counter) ? 'active circle':'circle'" @click="counter = index"
+                                    class='mx-1'>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

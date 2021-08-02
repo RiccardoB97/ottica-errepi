@@ -276,6 +276,22 @@ MAIN
     padding: 0 1.9rem;
 }
 
+.circle{
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    border: 1px solid #232323;
+}
+
+.circle:hover{
+    cursor: pointer;
+}
+
+.active{
+    background-color: #232323;
+}
+
+
 /* Small screen */
 @media screen and (max-width: 768px){
     .logo_header{
@@ -291,6 +307,9 @@ MAIN
         border-top-left-radius: 25%;
         height: 240px;
     }
+    .why_us_span{
+        font-size: 14px!important;
+    }
 
 }
 
@@ -298,6 +317,9 @@ MAIN
 @media screen and (min-width: 768px) and (max-width: 1000px){
     nav ul li{
         padding: 0 1rem;
+    }
+    .why_us_span{
+        font-size: 16px!important;
     }
 
 }
