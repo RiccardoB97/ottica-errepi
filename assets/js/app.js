@@ -21,6 +21,7 @@ const app = new Vue({
         ],
         images: ['./assets/img/04-perchè-scegliere-noi/imm-lab-01.png', './assets/img/04-perchè-scegliere-noi/imm-lab-02.png', './assets/img/04-perchè-scegliere-noi/imm-lab-03.png'],
         counter: 0,
+        position: ''
     },
     created() {
         window.addEventListener('resize', this.handleResize);

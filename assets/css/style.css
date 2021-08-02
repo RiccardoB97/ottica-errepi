@@ -291,6 +291,54 @@ MAIN
     background-color: #232323;
 }
 
+.slider i:hover{
+    cursor: pointer;
+}
+
+/* Contacts */
+#contacts{
+    background-color:#232323;
+    color: white;
+}
+
+.contact_us{
+    position: absolute;
+    top: 0;
+    transform: translate(0 , -50%);
+    font-size: 40px;
+    font-family: 'Cormorant', serif;
+    font-weight: bold;
+    color: #232323;
+    padding: 0.4rem 1rem;
+    border-bottom-left-radius: 1.8rem;
+    border-top-left-radius: 1.8rem;
+    border-bottom-right-radius: 1.8rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgb(48, 48, 48);
+    margin: 0;
+}
+
+#contacts h4{
+    font-family: 'Cormorant', serif;
+    font-weight: 300;
+    font-size: 50px;
+}
+
+.address ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.address ul li{
+    border: 1px solid #DFDFDF;
+    padding: 0.5rem;
+}
+
+.address ul li p{
+    font-size: 0.5rem;
+    margin: 0;
+}
 
 /* Small screen */
 @media screen and (max-width: 768px){
@@ -385,6 +433,10 @@ MAIN
     }
 
     .chi_siamo, .always_updated, .our_lab{
+        font-size: 30px;
+    }
+
+    #contacts h4{
         font-size: 30px;
     }
 
