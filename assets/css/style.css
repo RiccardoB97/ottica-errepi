@@ -340,6 +340,39 @@ MAIN
     margin: 0;
 }
 
+/* Carousel */
+
+.carousel{
+    height: 200px;
+}
+
+/****
+Footer
+*****/
+
+#site_footer {
+    background-color: #232323;
+    color: white;
+    padding: 1rem;
+}
+
+#site_footer a{
+    color: white;
+    padding: 0 0.5rem;
+}
+
+#site_footer p, #site_footer p span{
+    font-family:'Montserrat', serif;
+    font-weight: lighter;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+}
+
+#site_footer p span{
+    font-weight: 400!important;
+}
+
 /* Small screen */
 @media screen and (max-width: 768px){
     .logo_header{
