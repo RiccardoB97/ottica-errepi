@@ -13,6 +13,9 @@
 
 .body{
     color: #232323;
+    width: 100%!important;
+    margin: 0!important;
+    overflow-x: hidden!important;
 }
 
 
@@ -23,7 +26,7 @@ HEADER
 *****/
 
 #site_header {
-    overflow: hidden;
+    overflow-y: hidden;
 }
 
 .black_bar{
@@ -40,7 +43,6 @@ HEADER
 
 .sticky{
     overflow: hidden;
-    position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
     width: 100%;
@@ -112,7 +114,7 @@ MAIN
 *****/
 
 #site_main{
-    padding-top: 180px;
+    padding-top: 80px;
 }
 
 .jumbo h1{
@@ -383,6 +385,9 @@ MAIN
     border: 1px solid white;
 }
 
+.address .row{
+    margin: 0;
+}
 /* Carousel */
 
 .carousel{
@@ -449,6 +454,10 @@ Footer
         height: 100%;
     }
 
+    #site_main{
+        padding-top: 0px;
+    }
+
 
 }
 
@@ -463,6 +472,10 @@ Footer
 
     .chi_siamo_text{
         margin-top: 2rem;
+    }
+
+    #site_main{
+        padding-top: 40px;
     }
 
 }
@@ -532,7 +545,11 @@ Footer
     }
 
     .chi_siamo, .always_updated, .our_lab{
-        font-size: 30px;
+        font-size: 28px;
+    }
+
+    .lab img{
+        margin-bottom: 2rem;
     }
 
     #contacts h4{
