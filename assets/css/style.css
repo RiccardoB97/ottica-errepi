@@ -36,7 +36,7 @@ HEADER
 }
 
 .logo_header{
-    width: 350px;
+    height: 38px;
 }
 
 /* Navbar */
@@ -360,6 +360,15 @@ MAIN
     font-size: 0.5rem;
     margin: 0;
 }
+.address a{
+    color: white;
+    font-size: 0.5rem;
+    margin: 0;
+}
+
+.address a:hover{
+    cursor: pointer;
+}
 
 .hours p{
     margin: 0;
@@ -390,9 +399,6 @@ MAIN
 }
 /* Carousel */
 
-.carousel{
-    height: 200px;
-}
 
 /****
 Footer
@@ -424,7 +430,7 @@ Footer
 /* Small screen */
 @media screen and (max-width: 768px){
     .logo_header{
-        width: 250px;
+        height: 20px;
     }
     nav ul li{
         padding: 0 0.5rem;
