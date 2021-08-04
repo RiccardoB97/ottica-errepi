@@ -5,6 +5,9 @@ const app = new Vue({
             width: 0,
             height: 0
         },
+        jumbo: [
+            "./assets/img/00-Header/header-img-01.png", "./assets/img/00-Header/header-img-02.png", "./assets/img/00-Header/header-img-03.png", "./assets/img/00-Header/header-img-04.png"
+        ],
         whyUs: [
             {
                 'image': './assets/img/04-perchè-scegliere-noi/imm-lab-01.png',
@@ -20,6 +23,7 @@ const app = new Vue({
             }
         ],
         images: ['./assets/img/04-perchè-scegliere-noi/imm-lab-01.png', './assets/img/04-perchè-scegliere-noi/imm-lab-02.png', './assets/img/04-perchè-scegliere-noi/imm-lab-03.png'],
+        jumboCounter: 0,
         counter: 0,
         position: '',
     },
@@ -52,6 +56,24 @@ const app = new Vue({
                 return this.counter -= 1, this.position = 'first ';
             }
             return this.counter -= 1, this.position = ' first ';
+        },
+        showNextJumbo() {
+            // Shows next picture
+            if (this.jumboCounter === this.jumbo.length - 1) {
+                return this.jumboCounter = 0, this.position = 'first ';
+            } else if (this.jumboCounter === this.jumbo.length - 2) {
+                return this.jumboCounter += 1, this.position = 'last ';
+            }
+            return this.jumboCounter += 1, this.position = '';
+        },
+        showPrevJumbo() {
+            // Shows previous picture
+            if (this.jumboCounter === 0) {
+                return this.jumboCounter = this.jumbo.length - 1, this.position = 'last ';
+            } else if (this.jumboCounter === 1) {
+                return this.jumboCounter -= 1, this.position = 'first ';
+            }
+            return this.jumboCounter -= 1, this.position = ' first ';
         },
     }
 })

@@ -101,12 +101,11 @@ nav .socials a{
     position: relative;
 }
 
-.models{
+.models-wrap img{
     height: 400px;
-    position: absolute;
-    left: -3rem;
     z-index: -1;
 }
+
 
 
 /****
@@ -124,6 +123,10 @@ MAIN
 
 .jumbo i{
     font-size: 72px;
+}
+
+.jumbo i.fas{
+    font-size: 1rem;
 }
 
 .jumbo .asterisco{
@@ -457,12 +460,6 @@ Footer
         height: 250px;
         display: flex;
         justify-content: center;
-    }
-    .models{
-        top: -1.2rem;
-        left: 50%;
-        transform: translate(-50%, 0);
-        height: 100%;
     }
 
     #site_main{
