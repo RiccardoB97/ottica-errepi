@@ -464,18 +464,18 @@ Footer
 
     .models-wrap{
         position: relative!important;
-        height: 250px;
         display: flex;
         left: 0!important;
-        top: 1rem;
+        top: -1rem;
         flex-direction: column;
         justify-content: center;
         margin-bottom: 4rem;
     }
 
     .models-wrap img {
-        height: 50%!important;
         z-index: -1;
+        position: relative!important;
+        height: 250px!important;
     }
 
 }
