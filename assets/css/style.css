@@ -282,6 +282,11 @@ MAIN
 .why_us h3{
     font-family: 'Cormorant', serif;
     font-weight: bold;
+    padding: 1rem 0;
+    background-image: url('../img/04-perchè-scegliere-noi/ovale.png');
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
 }
 
 .why_us img{
