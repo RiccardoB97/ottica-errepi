@@ -15,9 +15,16 @@
     color: #232323;
 }
 
+
+
+
 /****
 HEADER
 *****/
+
+#site_header {
+    overflow: hidden;
+}
 
 .black_bar{
     background-color: black;
@@ -31,9 +38,10 @@ HEADER
 
 /* Navbar */
 
-.sticky-navbar{
+.sticky{
     overflow: hidden;
-    position: fixed;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
     top: 0;
     width: 100%;
     background-color: white;
@@ -87,13 +95,24 @@ nav .socials a{
     padding: 0 0.5rem;
 }
 
+.models-wrap {
+    position: relative;
+}
+
+.models{
+    height: 130%;
+    position: absolute;
+    left: -1rem;
+    z-index: -1;
+}
+
 
 /****
 MAIN
 *****/
 
 #site_main{
-    margin-top: 180px;
+    padding-top: 180px;
 }
 
 .jumbo h1{
@@ -299,6 +318,7 @@ MAIN
 #contacts{
     background-color:#232323;
     color: white;
+    padding-bottom: 2rem;
 }
 
 .contact_us{
@@ -332,12 +352,35 @@ MAIN
 
 .address ul li{
     border: 1px solid #DFDFDF;
-    padding: 0.5rem;
 }
 
 .address ul li p{
     font-size: 0.5rem;
     margin: 0;
+}
+
+.hours p{
+    margin: 0;
+    padding: 0;
+}
+
+.time{
+    justify-self: center;
+    font-size: 0.5rem;
+    color: #DFDFDF;
+    font-family: 'Montserrat', serif;
+    font-weight: lighter;
+}
+
+.weekday{
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+    font-size: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.border-white{
+    border: 1px solid white;
 }
 
 /* Carousel */
@@ -391,11 +434,26 @@ Footer
     .why_us_span{
         font-size: 14px!important;
     }
+    .jumbo .asterisco {
+        visibility: hidden !important;
+    }
+    .models-wrap{
+        height: 250px;
+        display: flex;
+        justify-content: center;
+    }
+    .models{
+        top: -1.2rem;
+        left: 50%;
+        transform: translate(-50%, 0);
+        height: 100%;
+    }
+
 
 }
 
 /* between small and medium */
-@media screen and (min-width: 768px) and (max-width: 1000px){
+@media screen and (min-width: 768px) and (max-width: 992px){
     nav ul li{
         padding: 0 1rem;
     }
@@ -403,11 +461,19 @@ Footer
         font-size: 16px!important;
     }
 
+    .chi_siamo_text{
+        margin-top: 2rem;
+    }
+
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px){
     .chi_siamo_wrap img{
         left: -70%;
+    }
+
+    .chi_siamo_text{
+        margin-top: 4rem;
     }
 }
 
@@ -434,7 +500,7 @@ Footer
     .lab img{
         position: relative !important;
         margin-top: 3rem;
-        height: 75%;
+        height: 280px;
     }
 
     .lab .lista{
@@ -445,7 +511,7 @@ Footer
 }
 
 /* bigger screen */
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 992px){
     nav .socials{
         visibility: hidden !important;
         font-size: 12px;
@@ -473,6 +539,8 @@ Footer
         font-size: 30px;
     }
 
+
+
 }
 
 @media screen and (max-width: 576px){
@@ -486,5 +554,14 @@ Footer
         font-size: 8px;
     }
 
+    #about{
+        margin-top: 1rem;
+    }
 
+}
+
+@media screen and (min-width: 1200px){
+    .models{
+        left: -3.5rem;
+    }
 }
