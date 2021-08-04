@@ -30,7 +30,7 @@ HEADER
 }
 
 .black_bar{
-    background-color: black;
+    background-color: #232323;
     height: 20px;
     width: 100%;
 }
@@ -98,7 +98,8 @@ nav .socials a{
 }
 
 .models-wrap {
-    position: relative;
+    position: absolute;
+    left: 37%;
 }
 
 .models-wrap img{
@@ -456,16 +457,26 @@ Footer
     .jumbo .asterisco {
         visibility: hidden !important;
     }
-    .models-wrap{
-        height: 250px;
-        display: flex;
-        justify-content: center;
-    }
 
     #site_main{
         padding-top: 0px;
     }
 
+    .models-wrap{
+        position: relative!important;
+        height: 250px;
+        display: flex;
+        left: 0!important;
+        top: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 4rem;
+    }
+
+    .models-wrap img {
+        height: 50%!important;
+        z-index: -1;
+    }
 
 }
 
@@ -486,6 +497,10 @@ Footer
         padding-top: 40px;
     }
 
+    .models-wrap {
+        left: 45%!important;
+    }
+
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px){
@@ -495,6 +510,10 @@ Footer
 
     .chi_siamo_text{
         margin-top: 5rem;
+    }
+
+    .models-wrap{
+        left: 40%!important;
     }
 }
 
@@ -585,8 +604,8 @@ Footer
 
 }
 
-@media screen and (min-width: 1200px){
-    .models{
-        left: -2.5rem;
+@media screen and (min-width: 992px){
+    .models-wrap {
+        left: 37%!important;
     }
 }

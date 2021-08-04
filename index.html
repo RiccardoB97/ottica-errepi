@@ -73,7 +73,7 @@
             <!-- Jumbo -->
             <section class="jumbo">
                 <div class="container">
-                    <div class="row">
+                    <div class="row position-relative">
                         <div class="col-12 col-md-6 position-relative d-flex justify-content-center">
                             <img src="./assets/img/00-Header/asterisco-elemento.png" class='asterisco'
                                 alt="elemento asterisco decorazione">
@@ -82,15 +82,17 @@
                             </h1>
                         </div>
                         <div class="col-12 col-md-6 models-wrap">
-                            <div class="slider d-flex align-items-center carousel slide">
-                                <div class="prev" @click="showPrevJumbo"><i class="fas fa-chevron-left"></i></div>
-                                <img :src="jumbo[jumboCounter]" alt="" class='mx-2'>
-                                <div class="next" @click="showNextJumbo"><i class="fas fa-chevron-right"></i></div>
-                            </div>
-                            <div class="circles d-flex mt-2 justify-content-center">
-                                <div v-for='(circle, index) in jumbo'
-                                    :class="(index == jumboCounter) ? 'active circle':'circle'"
-                                    @click="jumboCounter = index" class='mx-1'>
+                            <div class="row">
+                                <div class="slider d-flex align-items-center carousel slide justify-content-center">
+                                    <div class="prev" @click="showPrevJumbo"><i class="fas fa-chevron-left"></i></div>
+                                    <img :src="jumbo[jumboCounter]" alt="" class='mx-2'>
+                                    <div class="next" @click="showNextJumbo"><i class="fas fa-chevron-right"></i></div>
+                                </div>
+                                <div class="circles d-flex mt-2 justify-content-center">
+                                    <div v-for='(circle, index) in jumbo'
+                                        :class="(index == jumboCounter) ? 'active circle':'circle'"
+                                        @click="jumboCounter = index" class='mx-1'>
+                                    </div>
                                 </div>
                             </div>
                         </div>
