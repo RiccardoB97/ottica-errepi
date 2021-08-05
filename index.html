@@ -31,7 +31,7 @@
             <div class="black_bar"></div>
             <div class="container">
                 <div class="row">
-                    <div class="col-12 d-flex justify-content-center pb-md-3 pt-3">
+                    <div class="col-12 d-flex justify-content-center pb-md-3 pt-3 pb-3">
                         <img src="./assets/img/00-Header/Logo-ottica-errepi.png" class='logo_header'
                             alt="logo ottica errepi">
                     </div>
@@ -53,11 +53,14 @@
                                 </ul>
                             </div>
                             <div class="col-2">
-                                <div class="socials">
+                                <div class="socials" v-if='window.width > 992'>
                                     <a href="https://www.instagram.com/ottica_errepi/"><i
                                             class="fab fa-instagram"></i></a>
                                     <a href="https://www.facebook.com/otticaerrepi"><i
                                             class="fab fa-facebook-square"></i></a>
+                                </div>
+                                <div class="dropdown" v-if='window.width < 992'>
+                                    <i class="fas fa-angle-down"></i>
                                 </div>
                             </div>
                         </div>
@@ -411,7 +414,8 @@
                 <div class="row">
                     <div
                         class="logo_footer col-12 col-md-2 d-flex align-items-center justify-content-center py-1 py-md-0 order-md-1 order-1">
-                        <img src="./assets/img/07-Footer/pittogramma-ottica-errepi.png" alt="">
+                        <a href="#site_header"><img src="./assets/img/07-Footer/pittogramma-ottica-errepi.png"
+                                alt=""></a>
                     </div>
                     <div class='col-12 col-md-8  d-flex align-items-center justify-content-center order-md-2 order-3 '>
                         <p>&#9400; 2021 Copyright <span>Ottica Errepi</span>. All rights reserved. P.I. 02150840029
