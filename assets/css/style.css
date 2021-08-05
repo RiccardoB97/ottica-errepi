@@ -489,6 +489,11 @@ MAIN
     margin-top: 0.5rem;
 }
 
+.barred{
+    text-decoration: line-through;
+    color: #DFDFDF;
+}
+
 .border-white{
     border: 1px solid white;
 }
@@ -677,6 +682,11 @@ MEDIAQUERYS
         margin: 0;
         padding: 0;
     }
+    .hours .row{
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
 
 }
 
@@ -716,7 +726,7 @@ MEDIAQUERYS
     #contacts h4{
         font-size: 30px;
     }
-
+   
 
 
 }
