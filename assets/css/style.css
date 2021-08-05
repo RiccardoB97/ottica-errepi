@@ -15,7 +15,6 @@
     color: #232323;
     width: 100%!important;
     margin: 0!important;
-    overflow-x: hidden!important;
 }
 
 
@@ -42,7 +41,6 @@ HEADER
 /* Navbar */
 
 .sticky{
-    overflow: hidden;
     position: sticky;
     top: 0;
     width: 100%;
@@ -114,12 +112,45 @@ nav .socials a{
 .dropdown{
     display: flex;
     align-items: center;
-    justify-content: center;
     height: 100%;
+    position: relative;
 }
 .dropdown i{
     font-size: 14px;
 }
+
+.dropdown i:hover{
+    color: #DFDFDF;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 1rem;
+    background-color: #f9f9f9;
+    box-shadow: 2px 2px 10px rgb(144, 143, 143);
+    z-index: 999;
+    padding: 0 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+.dropdown-content a{
+    padding: 0 0.2rem;
+    color: #232323;
+    margin-bottom: 0.2rem;
+}
+
+.dropdown-content a:hover{
+    color: #DFDFDF;
+}
+
 
 
 
