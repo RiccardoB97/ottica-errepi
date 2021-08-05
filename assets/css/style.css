@@ -172,6 +172,13 @@ MAIN
 .jumbo h1{
     font-size: 72px;
     font-family: 'Cormorant', serif;
+    position: relative;
+}
+
+.jumbo h1 span{
+    position: absolute;
+    left: -1rem;
+    font-size: 2rem;
 }
 
 .jumbo i{
@@ -182,12 +189,6 @@ MAIN
     font-size: 1rem;
 }
 
-.jumbo .asterisco{
-    position: absolute;
-    top: -0.5rem;
-    left: -0.5rem;
-    height: 30px;
-}
 
 /* About */
 
@@ -331,9 +332,6 @@ MAIN
 
 /* Why us */
 
-.why_us{
-    padding-bottom: 4rem;
-}
 
 .why_us h3{
     font-family: 'Cormorant', serif;
@@ -381,6 +379,7 @@ MAIN
 #contacts{
     background-color:#232323;
     color: white;
+    margin-top: 4rem;
     padding-bottom: 2rem;
 }
 
@@ -529,15 +528,13 @@ MEDIAQUERYS
     nav ul li a{
         font-size: 12px;
     }
+
     .banner{
         border-top-left-radius: 25%;
         height: 240px;
     }
     .why_us_span{
         font-size: 14px!important;
-    }
-    .jumbo .asterisco {
-        visibility: hidden !important;
     }
 
     #site_main{
@@ -649,6 +646,11 @@ MEDIAQUERYS
     }
     .jumbo i{
         font-size: 40px;
+    }
+    .jumbo h1 span{
+        position: absolute;
+        left: -0.8rem;
+        font-size: 1.5rem;
     }
 
     .chi_siamo_wrap img{
