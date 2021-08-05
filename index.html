@@ -44,7 +44,8 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="row border-top border-bottom">
-                            <div class="col-sm-8 col-10 offset-sm-2 align-self-center  navbar">
+                            <div class="col-sm-8 col-10 offset-sm-2 align-self-center"
+                                :class="window.width < 576 ? 'navbar' : ''">
                                 <ul class="d-flex justify-content-center">
                                     <li><a href="#site_header">HOME</a></li>
                                     <li><a href="#about">CHI SIAMO</a></li>

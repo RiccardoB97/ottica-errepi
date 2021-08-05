@@ -194,6 +194,7 @@ MAIN
 
 #about{
     padding-top: 3rem;
+    margin-top: 3rem;
 }
 
 .chi_siamo_wrap{
@@ -533,8 +534,17 @@ MEDIAQUERYS
         border-top-left-radius: 25%;
         height: 240px;
     }
+
+    .jumbo{
+        padding-bottom: 0!important;
+    }
+
     .why_us_span{
         font-size: 14px!important;
+    }
+
+    .why_us i{
+        font-size: 0.8rem;
     }
 
     #site_main{
