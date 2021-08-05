@@ -688,6 +688,14 @@ MEDIAQUERYS
         text-align: center;
     }
 
+    .hours{
+        height: 80%;
+    }
+
+    .clock{
+        display: block!important;
+        padding-left: 15%;
+    }
 }
 
 /* bigger screen */
