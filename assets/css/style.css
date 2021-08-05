@@ -101,7 +101,6 @@ nav .socials a{
 
 .models-wrap {
     position: absolute;
-    left: 37%;
 }
 
 .models-wrap img{
@@ -489,6 +488,28 @@ Footer
     color: #DFDFDF;
 }
 
+
+/* 
+MEDIAQUERYS
+*/
+
+
+@media screen and (max-width: 576px){
+    .chi_siamo_wrap img{
+        left: -70%;
+    }
+    nav ul li{
+        padding: 0 0.5rem;
+    }
+    nav ul li a{
+        font-size: 8px;
+    }
+
+    #about{
+        padding-top: 0!important;
+    }
+}
+
 /* Small screen */
 @media screen and (max-width: 768px){
     .logo_header{
@@ -518,8 +539,8 @@ Footer
     .models-wrap{
         position: relative!important;
         display: flex;
-        left: 0!important;
         top: -1rem;
+
         flex-direction: column;
         justify-content: center;
         margin-bottom: 4rem;
@@ -529,6 +550,10 @@ Footer
         z-index: -1;
         position: relative!important;
         height: 250px!important;
+    }
+
+    #about{
+        padding-top:0rem;
     }
 
 }
@@ -551,7 +576,11 @@ Footer
     }
 
     .models-wrap {
-        left: 45%!important;
+        left: 57%;
+    }
+
+    .models-wrap img {
+        height: 300px;
     }
 
 }
@@ -566,7 +595,7 @@ Footer
     }
 
     .models-wrap{
-        left: 40%!important;
+        left: 57%;
     }
 }
 
@@ -639,25 +668,9 @@ Footer
 
 }
 
-@media screen and (max-width: 576px){
-    .chi_siamo_wrap img{
-        left: -70%;
-    }
-    nav ul li{
-        padding: 0 0.5rem;
-    }
-    nav ul li a{
-        font-size: 8px;
-    }
 
-    #about{
-        margin-top: 1rem;
-    }
-
-}
-
-@media screen and (min-width: 992px){
+@media screen and (min-width: 1200px){
     .models-wrap {
-        left: 37%!important;
+        left: 55%;
     }
 }
