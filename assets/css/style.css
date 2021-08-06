@@ -307,6 +307,7 @@ MAIN
     background-color: #232323;
     color: white;
     position: relative;
+    padding-bottom: 2.5rem;
 }
 
 .lab .our_lab{
@@ -326,7 +327,13 @@ MAIN
 }
 
 .lab .lista{
-    margin: 1.5rem 0;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 1.5rem;
+}
+
+.lab .lista ul{
+    margin-bottom: 0;
 }
 
 .lab p{
@@ -335,11 +342,21 @@ MAIN
 
 .lab img{
     position: absolute;
-    top: -1rem;
+    top: -1.3rem;
     height: 80%;
+    margin-right: 2rem;
+}
+
+.lab .margin_negative p{
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
 }
 
 /* Why us */
+
+.why_us{
+    padding-bottom: 4rem;
+}
 
 
 .why_us h3{
@@ -404,31 +421,32 @@ MAIN
 #contacts{
     background-color:#232323;
     color: white;
-    margin-top: 4rem;
+    padding-top: 2rem;
     padding-bottom: 2rem;
 }
 
 .contact_us{
     position: absolute;
-    top: 0;
+    top: -150%;
     transform: translate(0 , -50%);
-    font-size: 40px;
     font-family: 'Cormorant', serif;
     font-weight: bold;
     color: #232323;
-    padding: 0.4rem 1rem;
     border-bottom-left-radius: 1.8rem;
     border-top-left-radius: 1.8rem;
     border-bottom-right-radius: 1.8rem;
     background-color: white;
     box-shadow: 0 0 10px rgb(48, 48, 48);
     margin: 0;
+    font-size: 33px;
+    padding: 0.8rem 1.2rem;
 }
 
 #contacts h4{
     font-family: 'Cormorant', serif;
     font-weight: 300;
     font-size: 50px;
+    margin-bottom: 2rem;
 }
 
 .address .address_left_column, .address .address_right_column{
@@ -714,6 +732,7 @@ MEDIAQUERYS
     .lab img{
         position: relative !important;
         margin-top: 3rem;
+        margin-right: 0!important;
         height: 280px;
     }
 
@@ -770,15 +789,20 @@ MEDIAQUERYS
     }
 
 
+
     .lab img{
         margin-bottom: 2rem;
+    }
+
+    .why_us{
+        margin-top: -25px!important;
     }
 
     #contacts h4{
         font-size: 30px;
     }
    
-    .our_lab span, .chi_siamo span, .always_updated span{
+    .our_lab span, .chi_siamo span, .always_updated span, .contact_us span{
         font-size: 24px;
     }
 
@@ -799,6 +823,10 @@ MEDIAQUERYS
 
     .why_us img{
         transition: transform .2s;
+    }
+
+    .about_text{
+        padding-top: 3rem!important;
     }
 
 }
