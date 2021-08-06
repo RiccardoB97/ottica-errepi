@@ -367,6 +367,15 @@ MAIN
 
 .why_us span:hover{
     cursor: pointer;
+    color: #DFDFDF;
+}
+
+.why_us p{
+    font-size: 16px;
+    margin-bottom: 0!important;
+    font-family: 'Montserrat', serif;
+    text-align: center;
+    margin-top: 1.5rem;
 }
 
 .circle{

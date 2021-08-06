@@ -99,6 +99,15 @@ const app = new Vue({
                 return this.whyUs[index].showP = false;
             }
         },
+        showTextPhone(counter) {
+            if (this.whyUs[counter].showP === true) {
+                return this.whyUs[counter].showP = false;
+            }
+            else if (this.whyUs[counter].showP === false) {
+                return this.whyUs[counter].showP = true;
+            }
+
+        }
 
     }
 })
