@@ -11,21 +11,28 @@ const app = new Vue({
         whyUs: [
             {
                 'image': './assets/img/04-perchè-scegliere-noi/imm-lab-01.png',
-                'text': 'Esami della vista'
+                'paragraph': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, odit!',
+                'text': 'Esami della vista',
+                showP: false,
             },
             {
                 'image': './assets/img/04-perchè-scegliere-noi/imm-lab-02.png',
-                'text': 'I migliori accessori'
+                'paragraph': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, odit!',
+                'text': 'I migliori accessori',
+                showP: false,
             },
             {
                 'image': './assets/img/04-perchè-scegliere-noi/imm-lab-03.png',
-                'text': 'Articoli specifici'
+                'paragraph': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, odit!',
+                'text': 'Articoli specifici',
+                showP: false,
             }
         ],
         images: ['./assets/img/04-perchè-scegliere-noi/imm-lab-01.png', './assets/img/04-perchè-scegliere-noi/imm-lab-02.png', './assets/img/04-perchè-scegliere-noi/imm-lab-03.png'],
         jumboCounter: 0,
         counter: 0,
         position: '',
+        showMenu: false,
     },
     created() {
         window.addEventListener('resize', this.handleResize);
@@ -75,5 +82,23 @@ const app = new Vue({
             }
             return this.jumboCounter -= 1, this.position = ' first ';
         },
+        show() {
+            if (this.showMenu === false) {
+                return this.showMenu = true;
+            }
+            else
+                return this.showMenu = false;
+        },
+        showText(index) {
+            if (this.whyUs[index].showP === false) {
+                return this.whyUs.forEach(item => {
+                    item.showP = false;
+                }), this.whyUs[index].showP = true;
+            }
+            else if (this.whyUs[index].showP === true) {
+                return this.whyUs[index].showP = false;
+            }
+        },
+
     }
 })

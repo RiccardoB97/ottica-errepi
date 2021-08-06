@@ -132,7 +132,6 @@ nav .socials a{
 }
 
 .dropdown-content {
-    display: none;
     position: absolute;
     right: 0;
     top: 1rem;
@@ -142,20 +141,29 @@ nav .socials a{
     padding: 0 0.5rem;
     justify-content: center;
     align-items: center;
+    min-width: 120px;
 }
 
-.dropdown:hover .dropdown-content {
-    display: flex;
-}
 
 .dropdown-content a{
     padding: 0 0.2rem;
     color: #232323;
     margin-bottom: 0.2rem;
+    text-decoration: none;
+    margin: 0!important;
+    padding: 0.5rem 0
+}
+
+.dropdown-content a i{
+    font-size: 1rem;
 }
 
 .dropdown-content a:hover{
     color: #DFDFDF;
+}
+
+.facebook{
+    margin-left: 0.8rem!important;
 }
 
 
@@ -168,6 +176,8 @@ MAIN
 #site_main{
     padding-top: 80px;
 }
+
+
 
 .jumbo h1{
     font-size: 72px;
@@ -225,8 +235,6 @@ MAIN
 }
 
 .scroll{
-    height:120px;
-    overflow-y: scroll;
     font-family: 'Montserrat', serif;
     font-size: 16px;
 }
@@ -357,6 +365,10 @@ MAIN
     padding: 0 1.9rem;
 }
 
+.why_us span:hover{
+    cursor: pointer;
+}
+
 .circle{
     height: 14px;
     width: 14px;
@@ -375,6 +387,26 @@ MAIN
 .slider i:hover{
     cursor: pointer;
 }
+
+.why_us img:hover{
+    cursor: pointer;
+    opacity: 50%;
+    transform: scale(1.1)!important;
+}
+
+.why_us img{
+    transition: transform .2s;
+}
+
+.slider img{
+    transition: transform .2s;
+}
+
+.slider img:hover{
+    cursor: pointer;
+    opacity: 50%;
+}
+
 
 /* Contacts */
 #contacts{
@@ -431,11 +463,6 @@ MAIN
     height: 100%;
 }
 
-.address .address_right_column i{
-    font-size: 1.5rem;
-    margin-top: 1rem;
-}
-
 .address ul{
     list-style: none;
     margin: 0;
@@ -447,12 +474,12 @@ MAIN
 }
 
 .address ul li p{
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     margin: 0;
 }
 .address a{
     color: white;
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     margin: 0;
 }
 
@@ -477,14 +504,18 @@ MAIN
 .time{
     justify-self: center;
     font-size: 0.5rem;
-    color: #DFDFDF;
+    color: white;
     font-family: 'Montserrat', serif;
-    font-weight: lighter;
+    font-weight: 500;
+}
+
+.clock{
+    font-size:28px!important;
 }
 
 .weekday{
     font-family: 'Montserrat', serif;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 0.5rem;
     margin-top: 0.5rem;
 }
@@ -542,9 +573,7 @@ MEDIAQUERYS
 
 
 @media screen and (max-width: 576px){
-    .chi_siamo_wrap img{
-        left: -70%;
-    }
+   
     nav ul li{
         padding: 0 0.5rem;
     }
@@ -553,7 +582,24 @@ MEDIAQUERYS
     }
 
     #about{
-        padding-top: 0!important;
+        padding-top: 0rem!important;
+        margin-top: 0!important;
+    }
+
+    .chi_siamo_wrap img{
+        left: -70%;
+    }
+
+    .chi_siamo_text{
+        padding-top: 2rem;
+    }
+
+}
+
+
+@media screen and (min-width: 768px){
+    .clock{
+        padding-top: 2rem!important;
     }
 }
 
@@ -609,6 +655,11 @@ MEDIAQUERYS
         padding-top:0rem;
     }
 
+    .dropdown-content {
+        top:2rem;
+        right:-0.5rem;
+    }
+
 }
 
 /* between small and medium */
@@ -618,10 +669,6 @@ MEDIAQUERYS
     }
     .why_us_span{
         font-size: 16px!important;
-    }
-
-    .chi_siamo_text{
-        margin-top: 6rem;
     }
 
     #site_main{
@@ -690,11 +737,17 @@ MEDIAQUERYS
 
     .hours{
         height: 80%;
+        padding-top: 0!important;
     }
 
     .clock{
         display: block!important;
-        padding-left: 15%;
+        padding-left: 9.6%;
+        padding-top:0.8rem!important;
+    }
+
+    .clock .fas{
+        font-size: 28px!important;
     }
 }
 
@@ -744,4 +797,5 @@ MEDIAQUERYS
     .models-wrap {
         left: 55%;
     }
+
 }

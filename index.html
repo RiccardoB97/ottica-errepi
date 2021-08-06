@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
     <!-- Main css -->
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" href="/assets/img/00-Header/Fav-Icon-Ottica-Errepi.jpg" type="image/x-icon" />
 
 
 </head>
@@ -48,7 +49,7 @@
                                 :class="window.width < 576 ? 'navbar' : ''">
                                 <ul class="d-flex justify-content-center">
                                     <li><a href="#site_header">HOME</a></li>
-                                    <li><a href="#about">CHI SIAMO</a></li>
+                                    <li><a href="#circle_id">CHI SIAMO</a></li>
                                     <li><a href="#contacts">CONTATTI</a></li>
                                 </ul>
                             </div>
@@ -59,13 +60,31 @@
                                     <a href="https://www.facebook.com/otticaerrepi"><i
                                             class="fab fa-facebook-square"></i></a>
                                 </div>
-                                <div class="dropdown" v-if='window.width < 992'>
+                                <div class="dropdown" v-if='window.width < 992' @click='show()'>
                                     <i class="fas fa-angle-down"></i>
-                                    <div class="dropdown-content">
-                                        <a href="https://www.instagram.com/ottica_errepi/"><i
-                                                class="fab fa-instagram"></i></a>
-                                        <a href="https://www.facebook.com/otticaerrepi"><i
-                                                class="fab fa-facebook-square"></i></a>
+                                    <div class="dropdown-content" :class="showMenu === true ? d-flex : 'd-none'">
+                                        <div class="container p-0">
+                                            <div class="row">
+                                                <div
+                                                    class='col-4 p-0 d-flex align-items-center justify-content-center facebook'>
+                                                    <a href="https://www.instagram.com/ottica_errepi/"
+                                                        class='d-flex align-items-center'>
+                                                        <i class="fab fa-instagram">
+                                                        </i>
+                                                    </a>
+                                                </div>
+                                                <div
+                                                    class='col-4 p-0 d-flex align-items-center justify-content-center instagram'>
+                                                    <a href="https://www.facebook.com/otticaerrepi"
+                                                        class='d-flex align-items-center'>
+                                                        <i class="fab fa-facebook-square">
+                                                        </i>
+                                                    </a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -96,7 +115,7 @@
                                     <img :src="jumbo[jumboCounter]" alt="" class='mx-2'>
                                     <div class="next" @click="showNextJumbo"><i class="fas fa-chevron-right"></i></div>
                                 </div>
-                                <div class="circles d-flex mt-2 justify-content-center">
+                                <div class="circles d-flex mt-4 justify-content-center" id="circle_id">
                                     <div v-for='(circle, index) in jumbo'
                                         :class="(index == jumboCounter) ? 'active circle':'circle'"
                                         @click="jumboCounter = index" class='mx-1'>
@@ -237,10 +256,14 @@
                         </div>
                     </div>
                     <div class="row justify-content-center mt-3">
-                        <div class="col-3 d-flex flex-column align-items-center" v-for='item in whyUs'
+                        <div class="col-3 d-flex flex-column align-items-center" v-for='(item, index) in whyUs'
                             v-if='window.width > 1000'>
-                            <img :src="item.image" alt="perche scegliere noi modello con occhiali">
-                            <span>{{item.text.toUpperCase()}}</span>
+                            <img :src="item.image" alt="perche scegliere noi modello con occhiali"
+                                @click="showText(index)">
+                            <div :class="item.showP === true ? 'd-flex': 'd-none'">
+                                <p>{{item.paragraph}}</p>
+                            </div>
+                            <span @click="showText()">{{item.text.toUpperCase()}}</span>
                         </div>
                     </div>
                     <div class="row justify-content-center mt-3">
@@ -326,10 +349,10 @@
                             <!-- Opening hours -->
                             <div class="container px-0 border-white">
                                 <div class="row">
-                                    <div class="col-12 col-xl-3 d-flex justify-content-center clock">
+                                    <div class="col-12 col-xl-2 offset-xl-1 d-flex justify-content-center clock">
                                         <i class="fas fa-clock "></i>
                                     </div>
-                                    <div class="col-12 col-xl-9 hours py-xl-4 py-2">
+                                    <div class="col-12 col-xl-8 offset-xl-1 hours py-xl-4 py-2">
                                         <div class="row">
                                             <div class="col-3 d-flex px-0 align-items-center">
                                                 <p class="weekday">Martedi</p>
