@@ -207,31 +207,31 @@ MAIN
     margin-top: 3rem;
 }
 
-.chi_siamo_wrap{
+.chi_siamo_wrap {
     position: relative;
+    background-image: url(../img/01-Chi_siamo/elemento-02.png);
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-position: 0%, 100%!important;
+    padding: 2rem;
 }
 
-.chi_siamo_wrap img{
-    position: absolute;
-    height: 180px;
-    left: -75%;
-    top: 50%;
-    transform: translate(50%, -50%);
-    z-index: -1;
-}
 
 .chi_siamo{
-    font-size: 40px;
-    font-family: 'Cormorant', serif;
-    font-weight: bold;
     color: white;
-    padding: 0.4rem 0.7rem;
+    padding: 0.8rem 1.2rem;
     border-bottom-left-radius: 1.8rem;
     border-top-left-radius: 1.8rem;
     border-bottom-right-radius: 1.8rem;
     background-color: #232323;
     box-shadow: 0 0 10px rgb(48, 48, 48);
     margin: 0;
+}
+
+.chi_siamo span{
+    font-size: 33px;
+    font-family: 'Cormorant', serif;
+    font-weight: bold;
 }
 
 .scroll{
@@ -269,12 +269,13 @@ MAIN
     background-size: 100%;
 }
 
+
 .always_updated{
-    font-size: 40px;
+    font-size: 33px;
     font-family: 'Cormorant', serif;
     font-weight: bold;
     color: #232323;
-    padding: 0.4rem 0.7rem;
+    padding: 0.8rem 1.2rem;
     border-bottom-left-radius: 1.8rem;
     border-top-left-radius: 1.8rem;
     border-bottom-right-radius: 1.8rem;
@@ -312,17 +313,16 @@ MAIN
     position: absolute;
     top: 0;
     transform: translate(0 , -50%);
-    font-size: 40px;
-    font-family: 'Cormorant', serif;
-    font-weight: bold;
     color: white;
-    padding: 0.4rem 0.7rem;
     border-bottom-left-radius: 1.8rem;
     border-top-left-radius: 1.8rem;
     border-bottom-right-radius: 1.8rem;
     background-color: #232323;
     box-shadow: 0 0 10px rgb(48, 48, 48);
     margin: 0;
+    font-family: 'Cormorant', serif;
+    font-size: 33px;
+    padding: 0.8rem 1.2rem;
 }
 
 .lab .lista{
@@ -397,24 +397,7 @@ MAIN
     cursor: pointer;
 }
 
-.why_us img:hover{
-    cursor: pointer;
-    opacity: 50%;
-    transform: scale(1.1)!important;
-}
 
-.why_us img{
-    transition: transform .2s;
-}
-
-.slider img{
-    transition: transform .2s;
-}
-
-.slider img:hover{
-    cursor: pointer;
-    opacity: 50%;
-}
 
 
 /* Contacts */
@@ -782,12 +765,10 @@ MEDIAQUERYS
         height: 140px;
     }
 
-    .chi_siamo, .always_updated, .our_lab{
-        font-size: 28px;
+    .chi_siamo_text{
+        padding-top: 0!important;
     }
-    .our_lab{
-        font-size: 24px;
-    }
+
 
     .lab img{
         margin-bottom: 2rem;
@@ -797,7 +778,9 @@ MEDIAQUERYS
         font-size: 30px;
     }
    
-
+    .our_lab span, .chi_siamo span, .always_updated span{
+        font-size: 24px;
+    }
 
 }
 
@@ -807,4 +790,22 @@ MEDIAQUERYS
         left: 55%;
     }
 
+
+    .why_us img:hover{
+        cursor: pointer;
+        opacity: 50%;
+        transform: scale(1.1)!important;
+    }
+
+    .why_us img{
+        transition: transform .2s;
+    }
+
 }
+
+@media screen and (min-width: 1400px) {
+    #site_main{
+        padding-top:5rem;   
+    }
+}
+

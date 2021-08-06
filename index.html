@@ -134,12 +134,13 @@
                         <div
                             class="col-12 col-xl-4 mb-4 d-flex justify-content-center align-items-center chi_siamo_text">
                             <div class='chi_siamo_wrap'>
-                                <img src="./assets/img/01-Chi_siamo/elemento-02.png" alt="illustrazione cerchio">
-                                <span class='chi_siamo'>Chi siamo</span>
+                                <div class="chi_siamo d-flex align-items-center justify-content-center">
+                                    <span>Chi siamo</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-12 col-xl-8 pt-4">
-                            <p class="mt-3 scroll">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et
+                        <div class="col-12 col-xl-8 pt-xl-4 pt-0">
+                            <p class="mt-xl-3 mt-0 scroll">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et
                                 modi
                                 quibusdam
                                 dolores
@@ -168,8 +169,11 @@
                 <div class="banner position-relative">
                     <div class="container">
                         <div class="row">
-                            <div class="col-12 col-xl-6 mb-3 d-flex justify-content-center align-items-center">
-                                <span class='always_updated'>Sempre aggiornati</span>
+                            <div
+                                class="col-12 col-xl-6 mb-3 d-flex justify-content-center align-items-center always_updated_wrapper">
+                                <div class="always_updated d-flex align-items-center justify-content-center">
+                                    <span>Sempre aggioranti</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -208,7 +212,9 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-xl-6 mb-3 d-flex justify-content-center align-items-center">
-                            <span class='our_lab'>Il nostro laboratorio</span>
+                            <div class="our_lab d-flex align-items-center justify-content-center">
+                                <span>Il nostro laboratorio</span>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
@@ -269,11 +275,9 @@
                     <div class="row justify-content-center mt-3">
                         <div v-if="window.width <= 1000" class="col-12 d-flex flex-column align-items-center">
                             <div class="slider d-flex align-items-center carousel slide">
-                                <div class="prev" @click="showPrev" @click="showTextPhone(counter)"><i
-                                        class="fas fa-chevron-left"></i></div>
+                                <div class="prev" @click="showPrev"><i class="fas fa-chevron-left"></i></div>
                                 <img :src="images[counter]" alt="" class='mx-2' @click="showTextPhone(counter)">
-                                <div class="next" @click="showNext" @click="showTextPhone(counter)"><i
-                                        class="fas fa-chevron-right"></i></div>
+                                <div class="next" @click="showNext"><i class="fas fa-chevron-right"></i></div>
                             </div>
                             <div :class="whyUs[counter].showP === true ? 'd-flex': 'd-none'">
                                 <p>{{whyUs[counter].paragraph}}</p>

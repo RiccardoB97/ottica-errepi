@@ -106,8 +106,7 @@ const app = new Vue({
             else if (this.whyUs[counter].showP === false) {
                 return this.whyUs[counter].showP = true;
             }
-
-        }
+        },
 
     }
 })
