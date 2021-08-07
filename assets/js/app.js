@@ -110,3 +110,30 @@ const app = new Vue({
 
     }
 })
+
+const swiper = new Swiper('.swiper-container', {
+    // Optional parameters
+    loop: true,
+    autoplay: {
+        delay: 2500,
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 4,
+            spaceBetween: 10
+        },
+        // when window width is >= 480px
+        480: {
+            slidesPerView: 4,
+            spaceBetween: 20
+        },
+        // when window width is >= 640px
+        640: {
+            slidesPerView: 5,
+            spaceBetween: 50
+        }
+    },
+    followFinger: false,
+    noSwiping: true,
+
+});
