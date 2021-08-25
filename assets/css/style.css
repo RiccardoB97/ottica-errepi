@@ -293,12 +293,18 @@ MAIN
 
 .essilor{
     font-family: 'Montserrat', serif;
-    font-size:20px;
 }
 
-.essilor .bold{
-    font-size:16px;
-    font-weight: bold;
+.essilor a {
+    font-family: 'Montserrat', serif!important;
+    font-weight: bold!important;
+    text-decoration:none!important;
+    color: #232323!important;
+    font-size: 16px!important;
+}
+
+.essilor a:hover {
+    color: #DFDFDF!important;
 }
 
 /* Lab */
@@ -307,7 +313,6 @@ MAIN
     background-color: #232323;
     color: white;
     position: relative;
-    padding-bottom: 2.5rem;
 }
 
 .lab .our_lab{
@@ -330,7 +335,7 @@ MAIN
 .lab .lista{
     margin-right: 0;
     margin-left: 0;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 .lab .lista ul{
@@ -339,6 +344,7 @@ MAIN
 
 .lab p{
     font-size: 16px;
+    font-family: 'Montserrat', serif;
 }
 
 .lab img{
@@ -350,7 +356,7 @@ MAIN
 
 .lab .margin_negative p{
     margin-bottom: 2.5rem;
-    margin-top: 2.5rem;
+    margin-top: 0.5rem;
 }
 
 /* Why us */
@@ -588,7 +594,12 @@ Footer
 }
 
 #site_footer p span{
-    font-weight: 400!important;
+    font-weight: 400;
+}
+
+#site_footer p .pi {
+    font-weight: lighter!important;
+    text-decoration: none!important;
 }
 
 #site_footer a:hover{
@@ -865,11 +876,31 @@ MEDIAQUERYS
         padding-top: 3rem!important;
     }
 
+    .swiper-container{
+        padding: 0.7rem 0;
+    }
+
+    .swiper-slide img {
+        width: 40%;
+    }
+    .partners{
+        padding: 1rem;
+    }
+    
+
 }
 
 @media screen and (min-width: 1400px) {
     #site_main{
         padding-top:5rem;   
+    }
+
+    .partners {
+        padding: 1.5rem;
+    }
+
+    .swiper-slide img {
+        width: 35%;
     }
 }
 

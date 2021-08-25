@@ -6,25 +6,25 @@ const app = new Vue({
             height: 0
         },
         jumbo: [
-            "./assets/img/00-Header/header-img-01.png", "./assets/img/00-Header/header-img-02.png", "./assets/img/00-Header/header-img-03.png", "./assets/img/00-Header/header-img-04.png"
+            "./assets/img/00-Header/header-image-01.png", "./assets/img/00-Header/header-img-02.png", "./assets/img/00-Header/header-img-03.png", "./assets/img/00-Header/header-img-04.png"
         ],
         whyUs: [
             {
                 'image': './assets/img/04-perchè-scegliere-noi/imm-lab-01.png',
-                'paragraph': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, odit!',
-                'text': 'Esami della vista',
+                'paragraph': 'Effettuiamo un controllo computerizzato della vista e ci avvaliamo di attrezzature tecnologicamente all’avanguardia per trovare la diottria ottimale.',
+                'text': 'ESAME OPTOMETRICO',
                 showP: false,
             },
             {
                 'image': './assets/img/04-perchè-scegliere-noi/imm-lab-02.png',
-                'paragraph': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, odit!',
-                'text': 'I migliori accessori',
+                'paragraph': "Vi proponiamo montature classiche e di tendenza con lenti di qualità top personalizzate e occhiali da sole per ogni esigenza: polarizzati, antiriflesso, per la guida e per lo sport.",
+                'text': 'OCCHIALI VISTA & SOLE',
                 showP: false,
             },
             {
                 'image': './assets/img/04-perchè-scegliere-noi/imm-lab-03.png',
-                'paragraph': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, odit!',
-                'text': 'Articoli specifici',
+                'paragraph': "Lenti a contatto delle migliori marche a seconda del difetto visivo per restare in contatto con il tuo mondo senza occhiali.",
+                'text': 'LENTI A CONTATTO',
                 showP: false,
             }
         ],
